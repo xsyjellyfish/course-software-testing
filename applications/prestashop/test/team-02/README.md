@@ -1,80 +1,35 @@
-# Team 02 — Six Black-Box Defects in the PrestaShop Storefront
+# PrestaShop — Team 02
 
-Each document below records one independent black-box defect: the technique, the requirement clause it is measured against, why the baseline suite does not catch it, the preconditions, the click path, the expected result, the observed result captured from a real run, the evidence artifacts and the validation status.
+## Team Members
 
-| ID | Defect | Requirement | Technique | Baseline evidence | Script check |
-|---|---|---|---|---|---|
-| [BB-01](black-box-01.md) | Repeating Add to cart for a variant already in the cart **overwrites** its quantity: 2 + 1 unit ends at 1 unit ($24.00, total $29.00) instead of 3 units | REQ-3.3, REQ-4.1 | State transition testing (cart quantity states) | Baseline only adds a variant once, so the accumulate path is untested | `BB-01` |
-| [BB-02](black-box-02.md) | Selecting `Français` changes nothing (`html lang` stays `en`, every label stays English) and the combobox reverts to `English` after navigation | REQ-1.1 | State transition testing (selection → navigation) | Baseline only asserts the combobox exists | `BB-02` |
-| [BB-03](black-box-03.md) | A second identical purchase (same basket, address, carrier, payment) returns the **first** order reference, adds no history row and leaves the order count unchanged | REQ-5.6, REQ-7.5 | State transition testing over the order state machine, with a control checkout | No baseline test repeats a purchase | `BB-03` |
-| [BB-04](black-box-04.md) | `Shipping Method` contains no named region at all, the only `Shipping cost` region lives inside `Order summary`, and the `Delivery` radio carries no cost | REQ-5.4 | Equivalence partitioning over checkout regions, read through the accessibility tree | **`REQ-5.4` "Choose Delivery" fails** with `element(s) not found` | `BB-04` |
-| [BB-05](black-box-05.md) | The enlarged image in the `Zoom` dialog keeps the fixed name `Product image` and never identifies the selected image | REQ-3.8, REQ-3.7 | State transition testing over the gallery, read through the accessibility tree | **`REQ-3.8` fails**: dialog image named after the product → count 0 | `BB-05` |
-| [BB-06](black-box-06.md) | `Order history` shows `You have no orders.` while the order request is pending, for a customer who has an order | REQ-7.5 | State transition testing over the asynchronous load, request throttled to expose the intermediate state | Baseline reads the list only after it has loaded | `BB-06` |
+- xvsuyi
+- luoyawen
+- fanghaotian
 
-## Reproducing
+## Black-box Tests
 
-The checks drive the user interface only: no application source is read and no API is called directly.
+| Test Case | Finding |
+| --- | --- |
+| [BB-01](black-box-01.md) | Repeated additions overwrite cart quantity |
+| [BB-02](black-box-02.md) | Language selection has no effect |
+| [BB-03](black-box-03.md) | Repeated purchases return the same order reference |
+| [BB-04](black-box-04.md) | Missing shipping cost information |
+| [BB-05](black-box-05.md) | Incorrect accessible name for enlarged images |
+| [BB-06](black-box-06.md) | Incorrect empty order history during loading |
 
-1. Start the application so that the storefront answers on `http://127.0.0.1:3000` (from `applications/prestashop`: `npm run build` then `npm start`).
-2. Point the script at a folder that owns a Playwright installation, then run it:
+## White-box Tests
 
-```powershell
-cd applications/prestashop/test/team-02/scripts
-$env:BASE_URL = 'http://127.0.0.1:3000'
-$env:PLAYWRIGHT_HOME = 'd:/481/11.25/pw/'   # folder whose node_modules contains @playwright/test
-node repro-team-02.mjs                       # all six checks
-$env:ONLY = 'BB-04'; node repro-team-02.mjs  # a single check
-```
-
-The script creates the fixtures it needs (address alias `Home`, Bank wire payment, `Terms and conditions`), writes screenshots into [`assets/`](assets) and appends a transcript to [`scripts/repro.log`](scripts/repro.log). That file holds the run the documents quote (freshly seeded database); earlier runs, including a script error that has since been fixed, are kept in [`scripts/repro-history.log`](scripts/repro-history.log).
-
-## Fixtures
-
-| Account | Password | Used by |
-|---|---|---|
-| `prestashop_checkout_invoice_user@example.com` | `ShopPass123!` | BB-04 |
-| `prestashop_checkout_6_7_user@example.com` | `ShopPass123!` | BB-03 |
-| `prestashop_order_history_user@example.com` | `ShopPass123!` | BB-06 |
-
-Products: `/product/1` (detail t-shirt, $24.00), `/product/3` (checkout-step t-shirt, $26.00), `/product/7` (wishlist t-shirt, $23.00), `/product/8` (White t-shirt, $22.00). BB-01, BB-02 and BB-05 need no account.
-
-## Caveats
-
-- **BB-02** is reported as a *candidate*. REQ-1.1 requires the `Language` combobox and persistent navigation but does not enumerate translated strings, so the missing translation is an interpretation of the control's purpose; the part that is directly attributable to REQ-1.1 is that the selection is lost on navigation. Section 9 of the document states this.
-- **BB-03** could be intended de-duplication of identical baskets. The observable facts (one reference, one history row, an unchanged order count for two completed checkouts, while a different basket does create a new order) are recorded; if the store is meant to behave this way the finding should be reclassified rather than dropped.
-- **BB-03** and **BB-06** mutate stored data, and BB-03 needs an account without orders, so the recorded run was made on a freshly seeded database. To repeat it exactly, stop the application, move `backend/data/app.db*` aside, start it again (the schema and the seed data are recreated on boot) and run `node repro-team-02.mjs`. Order reference strings are generated per database, so a rebuilt database produces different strings with the same relation; the documents quote the values of the run in `scripts/repro.log` that starts from an empty `Order history`.
-
-# PrestaShop - Team 02 White-box Tests
-
-Team members: xvsuyi, luoyawen, fanghaotian. Tested revision: `024c2bc`.
-
-| Case | Finding | Requirements |
-| --- | --- | --- |
-| [WB01](white-box-01.md) | Size and color filters match different variants | REQ-2.7, REQ-2.10 |
-| [WB02](white-box-02.md) | Editing a shipping address changes the invoice address | REQ-5.4, REQ-5.7 |
-| [WB03](white-box-03.md) | Two purchases receive the same order reference | REQ-5.6 |
-| [WB04](white-box-04.md) | Creating an address overwrites an existing address | REQ-7.3, REQ-7.4 |
-| [WB05](white-box-05.md) | Renaming a wishlist changes another list | REQ-7.7, REQ-7.8 |
-| [WB06](white-box-06.md) | Signing in merges cart quantities beyond stock | REQ-3.2, REQ-3.9 |
-| [WB07](white-box-07.md) | The cart saves a fractional shirt quantity | REQ-4.4 |
-| [WB08](white-box-08.md) | Adding the same shirt twice leaves one unit | REQ-3.3, REQ-4.1 |
-| [WB09](white-box-09.md) | Keyboard focus disappears from search suggestions | REQ-1.1, REQ-1.3 |
-| [WB10](white-box-10.md) | Registration empties an existing guest cart | REQ-4.1, REQ-6.2 |
-| [WB11](white-box-11.md) | The global category menu stops opening on its parent page | REQ-1.2 |
-| [WB12](white-box-12.md) | Returning from the cart resets the product variant | REQ-3.9, REQ-4.5 |
-
-## Running the tests
-
-Use Node.js 22.12+, npm, Google Chrome and Playwright Test 1.55. From the repository root, run:
-
-```sh
-cd applications/prestashop
-npm ci --include=dev --include=optional
-npm install --no-save --package-lock=false @playwright/test@1.55.0
-npx playwright test -c test/team-02 --reporter=list
-```
-
-To run one case, append `-g WB08` (or another case ID) to the last command. Leave port 4188 available. The runner starts a fresh in-memory database. Each assertion checks expected behavior and fails when the reported discrepancy occurs. Screenshots and logs record the local implementation.
-
-For manual reproduction, run `DATABASE_URL=:memory: sh start.sh` from the application directory and open the printed URL. Account names in the cases expand to `prestashop_<name>@example.com` with password `ShopPass123!`. Default address fields are Store User, 1 Commerce Road, 200000, Shanghai, China and 13800000020.
-
+| Test Case | Finding |
+| --- | --- |
+| [WB01](white-box-01.md) | Size and color filters match different variants |
+| [WB02](white-box-02.md) | Editing a shipping address changes the invoice address |
+| [WB03](white-box-03.md) | Two purchases receive the same order reference |
+| [WB04](white-box-04.md) | Creating an address overwrites an existing address |
+| [WB05](white-box-05.md) | Renaming a wishlist changes another list |
+| [WB06](white-box-06.md) | Signing in merges cart quantities beyond stock |
+| [WB07](white-box-07.md) | The cart saves a fractional shirt quantity |
+| [WB08](white-box-08.md) | Repeated additions overwrite cart quantity |
+| [WB09](white-box-09.md) | Keyboard focus disappears from search suggestions |
+| [WB10](white-box-10.md) | Registration empties an existing guest cart |
+| [WB11](white-box-11.md) | The global category menu stops opening on its parent page |
+| [WB12](white-box-12.md) | Returning from the cart resets the product variant |

@@ -1,0 +1,128 @@
+[WebServer] (node:21613) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:21676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] <script src="/api/clock.js"> in "/index.html" can't be bundled without type="module" attribute
+[WebServer] (node:21741) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:21746) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21746) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Global navigation on parent page: - navigation "Global navigation":
+  - link "Logo":
+    - /url: /
+    - text: my store
+  - link "CLOTHES":
+    - /url: /category/clothes
+  - link "ACCESSORIES":
+    - /url: /category/accessories
+  - link "ART":
+    - /url: /category/art
+  - search:
+    - searchbox "Search"
+  - combobox "Language":
+    - option "English" [selected]
+    - option "Français"
+  - button "Sign in"
+  - link "Cart":
+    - /url: /cart
+    - text: Cart (0)
+  ✘  1 test/team-02/business.spec.ts:173:1 › WB11 global category menu stops opening on the parent page (5.4s)
+(node:21995) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21995) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Returning from cart: M Hummingbird detail t-shirt
+
+$24.00
+$30.00
+
+20% discount
+
+Tax included
+
+Tax excluded: $20.00
+
+A regular-fit t-shirt with a detailed Hummingbird print. Regular fit, soft cotton jersey, made for everyday wear.
+
+Available stock: 50
+Size
+M
+L
+Color
+White
+Black
+Quantity
+Increase quantity
+Decrease quantity
+Add to cart
+Wishlist
+  ✘  2 test/team-02/business.spec.ts:187:1 › WB12 browser back resets the selected product combination (5.5s)
+
+
+  1) test/team-02/business.spec.ts:173:1 › WB11 global category menu stops opening on the parent page 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('navigation', { name: 'Global navigation', exact: true }).getByRole('button', { name: /^Women$/i }).or(getByRole('navigation', { name: 'Global navigation', exact: true }).getByRole('link', { name: /^Women$/i }))
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('navigation', { name: 'Global navigation', exact: true }).getByRole('button', { name: /^Women$/i }).or(getByRole('navigation', { name: 'Global navigation', exact: true }).getByRole('link', { name: /^Women$/i }))
+
+
+      182 |   await clothes.press('Enter');
+      183 |   console.log('Global navigation on parent page:', await nav(page).ariaSnapshot());
+    > 184 |   await expect(action(nav(page), 'Women')).toBeVisible();
+          |                                            ^
+      185 | });
+      186 |
+      187 | test('WB12 browser back resets the selected product combination', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:184:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB11-global-categ-59fed--opening-on-the-parent-page/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB11-global-categ-59fed--opening-on-the-parent-page/error-context.md
+
+  2) test/team-02/business.spec.ts:187:1 › WB12 browser back resets the selected product combination 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByLabel('Size', { exact: true })
+    Expected string: "L"
+    Received string: "M"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveValue" with timeout 5000ms
+      - waiting for getByLabel('Size', { exact: true })
+        9 × locator resolved to <select id="size" class="mt-1 rounded border border-slate-300 px-2 py-1">…</select>
+          - unexpected value "M"
+
+
+      196 |   const size = page.getByLabel('Size', { exact: true });
+      197 |   console.log('Returning from cart:', await size.inputValue(), await region(page, 'Product information').innerText());
+    > 198 |   await expect(size).toHaveValue('L');
+          |                      ^
+      199 | });
+      200 |
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:198:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB12-browser-back-c9218-elected-product-combination/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB12-browser-back-c9218-elected-product-combination/error-context.md
+
+  2 failed
+    test/team-02/business.spec.ts:173:1 › WB11 global category menu stops opening on the parent page 
+    test/team-02/business.spec.ts:187:1 › WB12 browser back resets the selected product combination 

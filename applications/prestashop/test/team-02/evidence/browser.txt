@@ -1,0 +1,440 @@
+[WebServer] (node:20434) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:20495) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] <script src="/api/clock.js"> in "/index.html" can't be bundled without type="module" attribute
+[WebServer] (node:20553) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:20558) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20558) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+L + White: Showing 1-1 of 1 item(s) Sale
+Quick view
+Wishlist
+White
+Hummingbird detail t-shirt
+$30.00
+$24.00
+  ✘   1 test/team-02/business.spec.ts:8:1 › WB01 incompatible size and color (5.4s)
+(node:20584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+After editing Home, invoice selection: - region "Invoice address":
+  - heading "Invoice address" [level=3]
+  - radio "Office"
+  - text: Office
+  - paragraph: 1 Commerce Road
+  - radio "Home" [checked]
+  - text: Home
+  - paragraph: 88 Market Street
+  ✘   2 test/team-02/business.spec.ts:18:1 › WB02 separate invoice survives shipping edit (6.5s)
+(node:20834) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20834) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+References after two completed shopping flows: PS-MUWMMUBI154 PS-MUWMMUBI154
+  ✘   3 test/team-02/business.spec.ts:39:1 › WB03 new cart and second checkout create a new order (1.7s)
+(node:20850) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20850) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Saved Home articles: [
+  'Home\n' +
+    '\n' +
+    'Store User\n' +
+    '\n' +
+    '88 Market Street\n' +
+    '\n' +
+    '200000 Shanghai\n' +
+    '\n' +
+    'China\n' +
+    '\n' +
+    '13800000020\n' +
+    '\n' +
+    'Update\n' +
+    'Delete'
+]
+  ✘   4 test/team-02/business.spec.ts:54:1 › WB04 creating a second Home preserves the original address (5.8s)
+(node:20875) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20875) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Original empty destination after rename: Holiday Picks
+Information
+Addresses
+Order history and details
+Wishlist
+Hummingbird wishlist t-shirt
+$23.00
+Remove
+Add to cart
+  ✘   5 test/team-02/business.spec.ts:70:1 › WB05 rename transfers a product into an unrelated wishlist (5.9s)
+(node:21125) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21125) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Published L/Black stock 2; merged quantity 3 Hummingbird detail t-shirt
+Size: L
+Color: Black
+	
+$36.00
+	
+Increase quantity
+Decrease quantity
+	
+$108.00
+	Delete
+  ✘   6 test/team-02/business.spec.ts:99:1 › WB06 login merges quantities beyond variant stock (1.1s)
+(node:21137) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21137) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Persisted quantity 1.5 Hummingbird detail t-shirt
+Size: M
+Color: White
+	
+$24.00
+	
+Increase quantity
+Decrease quantity
+	
+$36.00
+	Delete
+  ✘   7 test/team-02/business.spec.ts:110:1 › WB07 cart accepts fractional shirts (537ms)
+(node:21153) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21153) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Two successful additions: 1 Hummingbird cart t-shirt
+Size: M
+Color: White
+	
+$25.00
+	
+Increase quantity
+Decrease quantity
+	
+$25.00
+	Delete
+  ✘   8 test/team-02/business.spec.ts:124:1 › WB08 adding the same cart shirt twice increases its unit count (511ms)
+(node:21165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Suggestion count after keyboard pause: 0
+After Enter: http://127.0.0.1:4188/ [
+  'Popular Products',
+  '20% OFF ON CLOTHES',
+  'Get our latest news and special sales',
+  'Products',
+  'Our company',
+  'Your account',
+  'Store information'
+]
+  ✘   9 test/team-02/business.spec.ts:138:1 › WB09 keyboard focus is lost inside search suggestions (5.6s)
+(node:21189) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21189) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Cart after registration: Shopping cart
+
+Your shopping cart is empty.
+
+Continue shopping
+Proceed to checkout
+Items subtotal
+$0.00
+Shipping
+$0.00
+Total
+$0.00
+
+Total including tax
+  ✘  10 test/team-02/business.spec.ts:153:1 › WB10 registration loses an existing guest cart (5.9s)
+
+
+  1) test/team-02/business.spec.ts:8:1 › WB01 incompatible size and color ──────────────────────────
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('region', { name: 'Product list', exact: true }).getByRole('region', { name: 'Product Hummingbird detail t-shirt', exact: true })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByRole('region', { name: 'Product list', exact: true }).getByRole('region', { name: 'Product Hummingbird detail t-shirt', exact: true })
+        9 × locator resolved to 1 element
+          - unexpected value "1"
+
+
+      13 |   await filters.getByLabel('White', { exact: true }).check();
+      14 |   console.log('L + White:', await count(page).innerText(), await region(page, 'Product list').innerText());
+    > 15 |   await expect(card(page, DETAIL)).toHaveCount(0);
+         |                                    ^
+      16 | });
+      17 |
+      18 | test('WB02 separate invoice survives shipping edit', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:15:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB01-incompatible-size-and-color/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB01-incompatible-size-and-color/error-context.md
+
+  2) test/team-02/business.spec.ts:18:1 › WB02 separate invoice survives shipping edit ─────────────
+
+    Error: expect(locator).toBeChecked() failed
+
+    Locator:  getByRole('region', { name: 'Invoice address', exact: true }).getByLabel('Office')
+    Expected: checked
+    Received: unchecked
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeChecked" with timeout 5000ms
+      - waiting for getByRole('region', { name: 'Invoice address', exact: true }).getByLabel('Office')
+        9 × locator resolved to <input checked type="radio" id="invoice-address-1" name="invoice-address"/>
+          - unexpected value "unchecked"
+
+
+      34 |   await expect(addresses).toContainText('88 Market Street');
+      35 |   console.log('After editing Home, invoice selection:', await invoice.ariaSnapshot());
+    > 36 |   await expect(invoice.getByLabel('Office')).toBeChecked();
+         |                                              ^
+      37 | });
+      38 |
+      39 | test('WB03 new cart and second checkout create a new order', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:36:46
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB02-separate-invoice-survives-shipping-edit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB02-separate-invoice-survives-shipping-edit/error-context.md
+
+  3) test/team-02/business.spec.ts:39:1 › WB03 new cart and second checkout create a new order ─────
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "PS-MUWMMUBI154"
+
+      49 |   const second = await reference.innerText();
+      50 |   console.log('References after two completed shopping flows:', first, second);
+    > 51 |   expect(second).not.toBe(first);
+         |                      ^
+      52 | });
+      53 |
+      54 | test('WB04 creating a second Home preserves the original address', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:51:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB03-new-cart-and-84a40-checkout-create-a-new-order/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB03-new-cart-and-84a40-checkout-create-a-new-order/error-context.md
+
+  4) test/team-02/business.spec.ts:54:1 › WB04 creating a second Home preserves the original address 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('article', { name: 'Home', exact: true }).filter({ hasText: '1 Commerce Road' })
+    Expected: 1
+    Received: 0
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByRole('article', { name: 'Home', exact: true }).filter({ hasText: '1 Commerce Road' })
+        9 × locator resolved to 0 elements
+          - unexpected value "0"
+
+
+      65 |   await original.first().waitFor();
+      66 |   console.log('Saved Home articles:', await original.allInnerTexts());
+    > 67 |   await expect(original.filter({ hasText: '1 Commerce Road' })).toHaveCount(1);
+         |                                                                 ^
+      68 | });
+      69 |
+      70 | test('WB05 rename transfers a product into an unrelated wishlist', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:67:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB04-creating-a-s-cb678-serves-the-original-address/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB04-creating-a-s-cb678-serves-the-original-address/error-context.md
+
+  5) test/team-02/business.spec.ts:70:1 › WB05 rename transfers a product into an unrelated wishlist 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('listitem', { name: 'Hummingbird wishlist t-shirt' })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByRole('listitem', { name: 'Hummingbird wishlist t-shirt' })
+        9 × locator resolved to 1 element
+          - unexpected value "1"
+
+
+      85 |   await expect(page.getByRole('heading', { name: 'Holiday Picks', exact: true })).toBeVisible();
+      86 |   console.log('Original empty destination after rename:', await page.locator('main').innerText());
+    > 87 |   await expect(item).toHaveCount(0);
+         |                      ^
+      88 | });
+      89 |
+      90 | async function addBlack(page: Page, units: string) {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:87:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB05-rename-trans-02063--into-an-unrelated-wishlist/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB05-rename-trans-02063--into-an-unrelated-wishlist/error-context.md
+
+  6) test/team-02/business.spec.ts:99:1 › WB06 login merges quantities beyond variant stock ────────
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 2
+    Received:    3
+
+      105 |   const quantity = await row.getByLabel('Quantity').inputValue();
+      106 |   console.log('Published L/Black stock 2; merged quantity', quantity, await row.innerText());
+    > 107 |   expect(Number(quantity)).toBeLessThanOrEqual(2);
+          |                            ^
+      108 | });
+      109 |
+      110 | test('WB07 cart accepts fractional shirts', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:107:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB06-login-merges-quantities-beyond-variant-stock/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB06-login-merges-quantities-beyond-variant-stock/error-context.md
+
+  7) test/team-02/business.spec.ts:110:1 › WB07 cart accepts fractional shirts ─────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      119 |   const saved = await quantity.inputValue();
+      120 |   console.log('Persisted quantity', saved, await row.innerText());
+    > 121 |   expect(Number.isInteger(Number(saved))).toBe(true);
+          |                                           ^
+      122 | });
+      123 |
+      124 | test('WB08 adding the same cart shirt twice increases its unit count', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:121:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB07-cart-accepts-fractional-shirts/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB07-cart-accepts-fractional-shirts/error-context.md
+
+  8) test/team-02/business.spec.ts:124:1 › WB08 adding the same cart shirt twice increases its unit count 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      133 |   const units = await row.getByLabel('Quantity').inputValue();
+      134 |   console.log('Two successful additions:', units, await row.innerText());
+    > 135 |   expect(units).toBe('2');
+          |                 ^
+      136 | });
+      137 |
+      138 | test('WB09 keyboard focus is lost inside search suggestions', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:135:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB08-adding-the-s-c298b-ce-increases-its-unit-count/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB08-adding-the-s-c298b-ce-increases-its-unit-count/error-context.md
+
+  9) test/team-02/business.spec.ts:138:1 › WB09 keyboard focus is lost inside search suggestions ───
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('heading', { name: 'Hummingbird detail t-shirt', exact: true })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'Hummingbird detail t-shirt', exact: true })
+
+
+      148 |   await page.keyboard.press('Enter');
+      149 |   console.log('After Enter:', page.url(), await page.getByRole('heading').allTextContents());
+    > 150 |   await expect(page.getByRole('heading', { name: DETAIL, exact: true })).toBeVisible();
+          |                                                                          ^
+      151 | });
+      152 |
+      153 | test('WB10 registration loses an existing guest cart', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:150:74
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB09-keyboard-foc-bf692-t-inside-search-suggestions/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB09-keyboard-foc-bf692-t-inside-search-suggestions/error-context.md
+
+  10) test/team-02/business.spec.ts:153:1 › WB10 registration loses an existing guest cart ─────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByRole('row', { name: 'Hummingbird detail t-shirt', exact: true })
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('row', { name: 'Hummingbird detail t-shirt', exact: true })
+
+
+      168 |   await region(page, 'Cart summary').waitFor();
+      169 |   console.log('Cart after registration:', await page.locator('main').innerText());
+    > 170 |   await expect(cartRow(page, DETAIL)).toBeVisible();
+          |                                       ^
+      171 | });
+      172 |
+      173 | test('WB11 global category menu stops opening on the parent page', async ({ page }) => {
+        at /Users/candice/Developer/coursework/CS481/course-software-testing/applications/prestashop/test/team-02/business.spec.ts:170:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB10-registration-loses-an-existing-guest-cart/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../../var/folders/4t/x0rjk4v93yz5ct1k65pqlkw00000gn/T/prestashop-team02-results/business-WB10-registration-loses-an-existing-guest-cart/error-context.md
+
+  10 failed
+    test/team-02/business.spec.ts:8:1 › WB01 incompatible size and color ───────────────────────────
+    test/team-02/business.spec.ts:18:1 › WB02 separate invoice survives shipping edit ──────────────
+    test/team-02/business.spec.ts:39:1 › WB03 new cart and second checkout create a new order ──────
+    test/team-02/business.spec.ts:54:1 › WB04 creating a second Home preserves the original address 
+    test/team-02/business.spec.ts:70:1 › WB05 rename transfers a product into an unrelated wishlist 
+    test/team-02/business.spec.ts:99:1 › WB06 login merges quantities beyond variant stock ─────────
+    test/team-02/business.spec.ts:110:1 › WB07 cart accepts fractional shirts ──────────────────────
+    test/team-02/business.spec.ts:124:1 › WB08 adding the same cart shirt twice increases its unit count 
+    test/team-02/business.spec.ts:138:1 › WB09 keyboard focus is lost inside search suggestions ────
+    test/team-02/business.spec.ts:153:1 › WB10 registration loses an existing guest cart ───────────
